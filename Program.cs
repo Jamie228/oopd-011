@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace oopd_011
+namespace oopd_011 //A Virtual Pet Simulation
 {
     class Program
     {
