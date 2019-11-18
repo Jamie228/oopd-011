@@ -1,0 +1,10 @@
+C:\Users\jamie\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.deps.json
+C:\Users\jamie\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.runtimeconfig.json
+C:\Users\jamie\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.runtimeconfig.dev.json
+C:\Users\jamie\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.dll
+C:\Users\jamie\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.pdb
+C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.csprojAssemblyReference.cache
+C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.AssemblyInfoInputs.cache
+C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.AssemblyInfo.cs
+C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.dll
+C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.pdb
