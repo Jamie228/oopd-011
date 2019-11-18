@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {}
+    "c:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {
+    "c:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
+        "projectUniqueName": "c:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
         "projectName": "oopd-011",
-        "projectPath": "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
+        "projectPath": "c:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
         "packagesPath": "C:\\Users\\jamie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\obj\\",
+        "outputPath": "c:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
