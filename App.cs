@@ -13,6 +13,11 @@ namespace oopd_011
             itemlist.PrintShopList();
             PetSelect();
         }
+
+        public void Run()
+        {
+            
+        }
         public void PetSelect()
         {
             Console.WriteLine("Choose a pet: ");
@@ -49,11 +54,6 @@ namespace oopd_011
                 pet.DisplayPet();
             }
 
-        }
-
-        public void Update()
-        {
-            
         }
     }
 }

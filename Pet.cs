@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace oopd_011
 {
@@ -16,6 +17,11 @@ namespace oopd_011
             PetName = petName;
             health = 100;
             mood = 100;
+        }
+
+        public void Update()
+        {
+            
         }
 
         public void DisplayPet()
