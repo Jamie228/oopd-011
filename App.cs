@@ -6,6 +6,13 @@ namespace oopd_011
     {
         int userPetChoice;
         string userPetName;
+        ItemList itemlist = new ItemList();
+        public void InitApp()
+        {
+            itemlist.CreateItemList();
+            itemlist.PrintShopList();
+            PetSelect();
+        }
         public void PetSelect()
         {
             Console.WriteLine("Choose a pet: ");

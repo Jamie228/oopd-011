@@ -25,6 +25,15 @@ namespace oopd_011
             Console.WriteLine($"Mood: {mood}");
         }
 
+        public void PetMenu()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("1.   Shop");
+            Console.WriteLine("2.   Inventory");
+            Console.WriteLine("3.   Quit");
+        }
+
         public void Play()
         {
 

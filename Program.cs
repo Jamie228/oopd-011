@@ -7,7 +7,7 @@ namespace oopd_011 //A Virtual Pet Simulation
         static void Main(string[] args)
         {
             App app = new App();
-            app.PetSelect();
+            app.InitApp();
         }
     }
 }
