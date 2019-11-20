@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace oopd_011
 {
-    class PetList
+    public enum PetType
     {
-        List<Pet> pets = new List<Pet>() {};
+        Dog,
+        Cat,
+        Tortoise 
     }
 }
