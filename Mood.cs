@@ -8,6 +8,7 @@ namespace oopd_011
         Cold,
         Hot,
         Ill,
-        Bored
+        Bored,
+        Sad
     }
 }

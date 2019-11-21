@@ -32,7 +32,7 @@ namespace oopd_011
                 Console.WriteLine("Enter a name: ");
                 userPetName = Console.ReadLine();
                 Console.Clear();
-                Pet pet = new Pet(PetType.Dog, userPetName);
+                Pet pet = new Pet(PetType.Dog, userPetName, Mood.Happy);
                 pet.DisplayPet();
             }
             else if (userPetChoice == 2)
@@ -41,7 +41,7 @@ namespace oopd_011
                 Console.WriteLine("Enter a name: ");
                 userPetName = Console.ReadLine();
                 Console.Clear();
-                Pet pet = new Pet(PetType.Cat, userPetName);
+                Pet pet = new Pet(PetType.Cat, userPetName, Mood.Happy);
                 pet.DisplayPet();
             }
             else if (userPetChoice == 3)
@@ -50,7 +50,7 @@ namespace oopd_011
                 Console.WriteLine("Enter a name: ");
                 userPetName = Console.ReadLine();
                 Console.Clear();
-                Pet pet = new Pet(PetType.Tortoise, userPetName);
+                Pet pet = new Pet(PetType.Tortoise, userPetName, Mood.Happy);
                 pet.DisplayPet();
             }
 
