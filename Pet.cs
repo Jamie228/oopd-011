@@ -12,12 +12,13 @@ namespace oopd_011
 
         int health;
         
-        public Pet(PetType petType, string petName, Mood mood)
+        public Pet(PetType petType, string petName)
         {
             this.petType = petType;
             PetName = petName;
             health = 100;
-            this.mood = mood;
+            mood = 75;
+            hunger = 0;
             
         }
 
@@ -30,11 +31,6 @@ namespace oopd_011
         {
             Console.WriteLine(PetName + " the " + Convert.ToString(petType));
             Console.WriteLine($"Health: {health}");
-            Console.WriteLine($"Mood: {mood}");
-            MoodDecision();
-            MoodDecision();
-            MoodDecision();
-            MoodDecision();
 
         }
 
@@ -43,36 +39,11 @@ namespace oopd_011
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("1.   Shop");
-            Console.WriteLine("2.   Inventory");
-            Console.WriteLine("3.   Quit");
+            Console.WriteLine("2.   Play With Pet");
+            Console.WriteLine("3.   Feed Pet");
+            Console.WriteLine("4.   Quit");
         }
 
-        public void MoodDecision()
-        {
-            int moodChance = rnd.Next(1,101);
-
-            if (moodChance >= 1 && moodChance < 34)
-            {
-                mood = Mood.Happy;
-                DisplayMood();
-            }
-            else if (moodChance >= 34 && moodChance < 67)
-            {
-                mood = Mood.Sad;
-                DisplayMood();
-            }
-            else if (moodChance >= 67 && moodChance < 101)
-            {
-                mood = Mood.Bored;
-                DisplayMood();
-            }
-
-        }
-
-        public void DisplayMood()
-        {
-            Console.WriteLine($"{PetName} is feeling {mood}");
-        }
         public void Play()
         {
 
