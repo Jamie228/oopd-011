@@ -5,11 +5,10 @@ namespace oopd_011
 {
     class Pet
     {
-        Random rnd = new Random();
         private readonly PetType petType;
-        private Mood mood;
         public string PetName { get; }
-
+        int mood;
+        int hunger;
         int health;
         
         public Pet(PetType petType, string petName)
