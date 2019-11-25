@@ -21,15 +21,12 @@ namespace oopd_011
             
         }
 
-        public void Update()
-        {
-            
-        }
-
         public void DisplayPet()
         {
             Console.WriteLine(PetName + " the " + Convert.ToString(petType));
             Console.WriteLine($"Health: {health}");
+            Console.WriteLine($"Mood: {mood}");
+            Console.WriteLine($"Hunger: {hunger}");
 
         }
 

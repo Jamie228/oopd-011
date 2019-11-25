@@ -9,8 +9,8 @@ namespace oopd_011
         public void CreateItemList()
         {
 
-            Item ball = new Item("Ball", 5, 10, 5);
-            Item toy = new Item("Toy", 10, 20, 10);
+            Item ball = new Item("Ball", 10);
+            Item toy = new Item("Toy", 20);
 
             itemList.Add(ball);
             itemList.Add(toy);
@@ -23,7 +23,6 @@ namespace oopd_011
             {
                 Console.WriteLine(x + ". " + item.itemName);
                 Console.WriteLine($"Cost: {item.cost} coins");
-                Console.WriteLine($"Uses: {item.uses}");
                 Console.WriteLine();
                 x ++;
             }

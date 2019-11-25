@@ -7,6 +7,7 @@ namespace oopd_011
         int userPetChoice;
         string userPetName;
         ItemList itemlist = new ItemList();
+        Inventory inventory = new Inventory();
         public void InitApp()
         {
             itemlist.CreateItemList();
