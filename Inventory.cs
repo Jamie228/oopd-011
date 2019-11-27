@@ -9,7 +9,7 @@ namespace oopd_011
 
         public void AddToInventory(Item item)
         {
-            Player.inventory.Add(item);
+            inventory.Add(item);
         }
 
         public void DisplayInventory()

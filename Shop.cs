@@ -48,8 +48,9 @@ namespace oopd_011
             else
             {
                 player.coins = player.coins - item.cost;
-                player.inventory.Add(item);
-                invento
+                player.inventory.AddToInventory(item);
+                player.inventory.DisplayInventory();
+                
             }
             
         }
