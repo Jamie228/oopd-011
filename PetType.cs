@@ -7,6 +7,7 @@ namespace oopd_011
     {
         Dog,
         Cat,
-        Tortoise 
+        Tortoise,
+        Raccoon
     }
 }

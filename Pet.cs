@@ -10,6 +10,7 @@ namespace oopd_011
         int mood;
         int hunger;
         int health;
+        public double idealTemp;
         
         public Pet(PetType petType, string petName)
         {
@@ -18,6 +19,7 @@ namespace oopd_011
             health = 100;
             mood = 75;
             hunger = 0;
+            idealTemp = 22.5;
             
         }
 
@@ -35,9 +37,10 @@ namespace oopd_011
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("1.   Shop");
-            Console.WriteLine("2.   Play With Pet");
-            Console.WriteLine("3.   Feed Pet");
-            Console.WriteLine("4.   Quit");
+            Console.WriteLine("2.   Use Item");
+            Console.WriteLine("3.   Heat Room");
+            Console.WriteLine("4.   Cool Room");
+            Console.WriteLine("5.   Quit");
         }
 
         public void Play()

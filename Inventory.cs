@@ -9,7 +9,15 @@ namespace oopd_011
 
         public void AddToInventory(Item item)
         {
-            inventory.Add(item);
+            Player.inventory.Add(item);
+        }
+
+        public void DisplayInventory()
+        {
+            foreach (Item item in inventory)
+            {
+                Console.WriteLine(item.itemName);
+            }
         }
     }
 }

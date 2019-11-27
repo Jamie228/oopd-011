@@ -6,13 +6,13 @@ namespace oopd_011
     {
         int userPetChoice;
         string userPetName;
-        ItemList itemlist = new ItemList();
+        Shop shop = new Shop();
         Inventory inventory = new Inventory();
         public void InitApp()
         {
-            itemlist.CreateItemList();
-            itemlist.PrintShopList();
-            PetSelect();
+            inventory.DisplayInventory();
+            shop.PrintShopList();
+            inventory.DisplayInventory();
         }
 
         public void Run()
@@ -25,6 +25,7 @@ namespace oopd_011
             Console.WriteLine("1.   Dog");
             Console.WriteLine("2.   Cat");
             Console.WriteLine("3.   Tortoise");
+            Console.WriteLine("4.   Raccoon");
             userPetChoice = Convert.ToInt32(Console.ReadLine());
 
             if (userPetChoice == 1)
@@ -52,6 +53,15 @@ namespace oopd_011
                 userPetName = Console.ReadLine();
                 Console.Clear();
                 Pet pet = new Pet(PetType.Tortoise, userPetName);
+                pet.DisplayPet();
+            }
+            else if (userPetChoice == 4)
+            {
+                Console.Clear();
+                Console.WriteLine("Enter a name: ");
+                userPetName = Console.ReadLine();
+                Console.Clear();
+                Pet pet = new Pet(PetType.Raccoon, userPetName);
                 pet.DisplayPet();
             }
 
