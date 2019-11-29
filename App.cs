@@ -1,25 +1,74 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
 
 namespace oopd_011
 {
+        public enum AppState
+        {
+            Run,
+            Shop,
+            Inventory,
+            Pause,
+            Exiting
+        }
     class App
     {
+        AppState appState = AppState.Run;
         int userPetChoice;
         string userPetName;
         Shop shop = new Shop();
         Inventory inventory = new Inventory();
-        public void InitApp()
+
+        Pet pet;
+        public App()
         {
-            inventory.DisplayInventory();
-            shop.PrintShopList();
-            inventory.DisplayInventory();
+            
+        }
+
+        public void Initialise()
+        {
+            Console.CursorVisible = false;
+            Console.Clear();
+            pet = PetSelect();
         }
 
         public void Run()
         {
-            
+            Initialise();
+
+            do
+            {
+                CheckKeyInput();
+
+                switch (appState)
+                {
+                    case AppState.Run:
+                        Console.Clear();
+                        pet.Update();
+                        pet.DisplayPet();
+                        break;
+                    case AppState.Pause:
+                        break;
+                    case AppState.Shop:
+                        //DisplayHelp();
+                        //Update();
+                        break;
+                    case AppState.Inventory:
+                        break;
+                    case AppState.Exiting:
+                        break;
+                    default:
+                        break;
+                }
+                
+                
+                Thread.Sleep(1000/10);
+            } while (appState != AppState.Exiting);
         }
-        public void PetSelect()
+        public Pet PetSelect()
         {
             Console.WriteLine("Choose a pet: ");
             Console.WriteLine("1.   Dog");
@@ -35,7 +84,7 @@ namespace oopd_011
                 userPetName = Console.ReadLine();
                 Console.Clear();
                 Pet pet = new Pet(PetType.Dog, userPetName);
-                pet.DisplayPet();
+                return(pet);
             }
             else if (userPetChoice == 2)
             {
@@ -44,7 +93,7 @@ namespace oopd_011
                 userPetName = Console.ReadLine();
                 Console.Clear();
                 Pet pet = new Pet(PetType.Cat, userPetName);
-                pet.DisplayPet();
+                return(pet);
             }
             else if (userPetChoice == 3)
             {
@@ -53,7 +102,7 @@ namespace oopd_011
                 userPetName = Console.ReadLine();
                 Console.Clear();
                 Pet pet = new Pet(PetType.Tortoise, userPetName);
-                pet.DisplayPet();
+                return(pet);
             }
             else if (userPetChoice == 4)
             {
@@ -62,9 +111,50 @@ namespace oopd_011
                 userPetName = Console.ReadLine();
                 Console.Clear();
                 Pet pet = new Pet(PetType.Raccoon, userPetName);
-                pet.DisplayPet();
+                return(pet);
+            }
+            else
+            {
+                return null;
             }
 
+        }
+
+        public void CheckKeyInput()
+        {
+            if (Console.KeyAvailable)
+            {
+                ConsoleKey keyPressed = Console.ReadKey(true).Key;
+
+                if (keyPressed == ConsoleKey.Escape)
+                {
+                    appState = AppState.Exiting;
+                }
+
+                if (keyPressed == ConsoleKey.I)
+                {
+                    appState = AppState.Inventory;
+                }
+
+                if (keyPressed == ConsoleKey.S)
+                {
+                    appState = AppState.Shop;
+                }
+
+
+                if (keyPressed == ConsoleKey.P)
+                {
+                    if (appState != AppState.Pause)
+                    {
+                        appState = AppState.Pause;
+                    }
+                    else if (appState == AppState.Pause)
+                    {
+                        appState = AppState.Run;
+                    }
+
+                }
+            }
         }
     }
 }

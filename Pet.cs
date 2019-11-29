@@ -1,5 +1,8 @@
 using System;
-using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace oopd_011
 {
@@ -30,6 +33,37 @@ namespace oopd_011
             Console.WriteLine($"Mood: {mood}");
             Console.WriteLine($"Hunger: {hunger}");
 
+        }
+
+        public void Update()
+        {
+            if (health - 1 >= 0)
+            {
+                health --;
+            }
+
+            else
+            {
+                
+            }
+            
+            if (hunger + 1 <= 100)
+            {
+                hunger ++;
+            }
+            else
+            {
+
+            }
+            
+            if (mood - 1 >= 0)
+            {
+                mood--;
+            }
+            else
+            {
+
+            }
         }
 
         public void PetMenu()

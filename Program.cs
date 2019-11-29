@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace oopd_011 //A Virtual Pet Simulation
 {
@@ -7,7 +11,7 @@ namespace oopd_011 //A Virtual Pet Simulation
         static void Main(string[] args)
         {
             App app = new App();
-            app.InitApp();
+            app.Run();
         }
     }
 }
