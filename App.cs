@@ -21,6 +21,7 @@ namespace oopd_011
         string userPetName;
         Shop shop = new Shop();
         Inventory inventory = new Inventory();
+        Player player = new Player();
 
         Pet pet;
         public App()
@@ -47,14 +48,24 @@ namespace oopd_011
                 {
                     case AppState.Run:
                         Console.Clear();
+                        player.Update();
+                        Console.WriteLine("Coins: " + player.coins);
+                        Console.WriteLine("---------------");
                         pet.Update();
                         pet.DisplayPet();
+                        Console.WriteLine("---------------");
+                        DrawMainMenu();
                         break;
                     case AppState.Pause:
                         break;
                     case AppState.Shop:
-                        //DisplayHelp();
-                        //Update();
+                        Console.Clear();
+                        pet.Update();
+                        pet.DisplayPet();
+                        DrawMainMenu();
+                        Console.WriteLine();
+                        shop.PrintShopList();
+                        appState = AppState.Run;
                         break;
                     case AppState.Inventory:
                         break;
@@ -65,7 +76,7 @@ namespace oopd_011
                 }
                 
                 
-                Thread.Sleep(1000/10);
+                Thread.Sleep(10000/10);
             } while (appState != AppState.Exiting);
         }
         public Pet PetSelect()
@@ -155,6 +166,16 @@ namespace oopd_011
 
                 }
             }
+        }
+
+        public void DrawMainMenu()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("S:   Shop");
+            Console.WriteLine("I:   Inventory");
+            Console.WriteLine("P:   Pause");
+            Console.WriteLine("ESC: Exit");
         }
     }
 }

@@ -14,9 +14,11 @@ namespace oopd_011
 
         public void DisplayInventory()
         {
+            int x = 0;
             foreach (Item item in inventory)
             {
-                Console.WriteLine(item.itemName);
+                Console.WriteLine(x + ". " + item.itemName);
+                x++;
             }
         }
     }

@@ -8,7 +8,11 @@ namespace oopd_011
         //public Inventory inventory = new Inventory();
         public int coins = 100;
 
+        public void Update()
+        {
+            coins++;
+        }
 
-
+        
     }
 }
