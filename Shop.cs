@@ -6,7 +6,6 @@ namespace oopd_011
 {
     class Shop
     {
-        Player player = new Player();
         List<Item> shop = new List<Item>();
         public Shop()
         {
@@ -17,7 +16,7 @@ namespace oopd_011
             shop.Add(toy);
         }
 
-        public void PrintShopList()
+        public void PrintShopList(Player player)
         {
             int x = 0;
             foreach (Item item in shop)
@@ -27,27 +26,27 @@ namespace oopd_011
                 Console.WriteLine();
                 x ++;
             }
-            Shopping();
+            Shopping(player);
         }
 
-        public void Shopping()
+        public void Shopping(Player player)
         {
             Console.WriteLine("Enter your shop selection: ");
             int userShoppingChoice = Convert.ToInt32(Console.ReadLine());
             Item selectedItem = shop.ElementAt(userShoppingChoice);
-            BuyItem(selectedItem);
+            BuyItem(selectedItem, player);
         }
 
-        public void BuyItem(Item item)
+        public void BuyItem(Item selectedItem, Player player)
         {
-            if (player.coins - item.cost < 0)
+            if (player.coins - selectedItem.cost < 0)
             {
                 Console.WriteLine("Not enough coins");
-                Shopping();
+                Shopping(player);
             }
             else
             {
-                player.coins = player.coins - item.cost;
+                player.coins = player.coins - selectedItem.cost;
                 //player.inventory.AddToInventory(item); 
             }
         }

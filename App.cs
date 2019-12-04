@@ -65,7 +65,7 @@ namespace oopd_011
                         pet.DisplayPet();
                         DrawMainMenu();
                         Console.WriteLine();
-                        shop.PrintShopList();
+                        shop.PrintShopList(player);
                         appState = AppState.Run;
                         break;
                     case AppState.Inventory:
