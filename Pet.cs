@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace oopd_011
 {
+    public enum TempStat
+    {
+        Cold,
+        Hot,
+        OK
+    }
     class Pet
     {
         private readonly PetType petType;
@@ -14,6 +20,8 @@ namespace oopd_011
         int hunger;
         int health;
         public double idealTemp;
+        TempStat tempStat;
+        
         
         public Pet(PetType petType, string petName)
         {
@@ -23,7 +31,6 @@ namespace oopd_011
             mood = 75;
             hunger = 0;
             idealTemp = 22.5;
-            
         }
 
         public void DisplayPet()
@@ -32,7 +39,7 @@ namespace oopd_011
             Console.WriteLine($"Health: {health}");
             Console.WriteLine($"Mood: {mood}");
             Console.WriteLine($"Hunger: {hunger}");
-
+            Console.WriteLine($"{PetName} is {tempStat}");
         }
 
         public void Update()
@@ -63,6 +70,22 @@ namespace oopd_011
             else
             {
 
+            }
+        }
+
+        public void UpdatePetTemp(Room room)
+        {
+            if (room.temp > idealTemp + 2.0)
+            {
+                tempStat = TempStat.Hot;
+            }
+            else if (room.temp < idealTemp - 2.0)
+            {
+                tempStat = TempStat.Cold;
+            }
+            else
+            {
+                tempStat = TempStat.OK;
             }
         }
 

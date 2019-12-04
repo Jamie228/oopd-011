@@ -13,6 +13,11 @@ namespace oopd_011
             coins++;
         }
 
+        public void DisplayCoins()
+        {
+            Console.WriteLine($"Coins: {coins}");
+        }
+
         
     }
 }

@@ -22,7 +22,7 @@ namespace oopd_011
         Shop shop = new Shop();
         Inventory inventory = new Inventory();
         Player player = new Player();
-
+        public Room room = new Room(18.0);
         Pet pet;
         public App()
         {
@@ -49,8 +49,9 @@ namespace oopd_011
                     case AppState.Run:
                         Console.Clear();
                         player.Update();
-                        Console.WriteLine("Coins: " + player.coins);
-                        Console.WriteLine("---------------");
+                        player.DisplayCoins();
+                        room.UpdateTemp();
+                        pet.UpdatePetTemp(room);
                         pet.Update();
                         pet.DisplayPet();
                         Console.WriteLine("---------------");
@@ -165,6 +166,16 @@ namespace oopd_011
                     }
 
                 }
+
+                if (keyPressed == ConsoleKey.UpArrow)
+                {
+                    room.HeatRoom();
+                }
+
+                if (keyPressed == ConsoleKey.DownArrow)
+                {
+                    room.CoolRoom();
+                }
             }
         }
 
@@ -175,6 +186,8 @@ namespace oopd_011
             Console.WriteLine("S:   Shop");
             Console.WriteLine("I:   Inventory");
             Console.WriteLine("P:   Pause");
+            Console.WriteLine("UP:  Heat Room");
+            Console.WriteLine("DWN: Cool Room");
             Console.WriteLine("ESC: Exit");
         }
     }
