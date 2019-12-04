@@ -68,7 +68,7 @@ namespace oopd_011
                         appState = AppState.Run;
                         break;
                     case AppState.Inventory:
-                        player.inventory.DisplayInventory();
+                        player.inventory.DisplayInventory(pet);
                         break;
                     case AppState.Exiting:
                         break;

@@ -13,7 +13,7 @@ namespace oopd_011
             inventory.Add(item);
         }
 
-        public void DisplayInventory()
+        public void DisplayInventory(Pet pet)
         {
             int x = 0;
             foreach (Item item in inventory)
@@ -22,16 +22,16 @@ namespace oopd_011
                 Console.WriteLine();
                 x++;
             }
-            SelectItem();
+            SelectItem(pet);
         }
 
-        public void SelectItem()
+        public void SelectItem(Pet pet)
         {
             Console.WriteLine();
             Console.WriteLine("Enter your selection:    ");
             int userSelection = Convert.ToInt32(Console.ReadLine());
             Item selectedInvItem = inventory.ElementAt(userSelection);
-            //selectedInvItem.UseItem();
+            //selectedInvItem.UseItem(pet);
         }
     }
 }
