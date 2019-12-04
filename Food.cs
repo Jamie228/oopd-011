@@ -6,17 +6,18 @@ using System.Threading;
 
 namespace oopd_011
 {
-    abstract class Item
+    class Food : Item
     {
-        public string itemName { get; set; }
-        public int cost { get; set; }
-        public int uses { get; set; }
+        int hungerInc;
 
-        public Item(string itemName, int cost, int uses)
+        public Food(string itemName, int cost, int uses, int hungerInc) : base(itemName, cost, uses)
         {
             this.itemName = itemName;
             this.cost = cost;
             this.uses = uses;
+            this.hungerInc = hungerInc;
         }
+
+
     }
 }

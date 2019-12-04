@@ -9,11 +9,17 @@ namespace oopd_011
         List<Item> shop = new List<Item>();
         public Shop()
         {
-            Item ball = new Item("Ball", 10);
-            Item toy = new Item("Toy", 20);
+            Toy ball = new Toy("Ball", 10, 3, 5);
+            Toy chewToy = new Toy("Chew Toy", 20, 5, 10);
+            Food cheapFood = new Food("Basic Pet Food", 15, 1, 15);
+            Food expFood = new Food("Luxury Pet Food", 75, 1, 45);
+            Medicine medicine = new Medicine("Pet Medicine", 25, 1, 25);
 
             shop.Add(ball);
-            shop.Add(toy);
+            shop.Add(chewToy);
+            shop.Add(cheapFood);
+            shop.Add(expFood);
+            shop.Add(medicine);
         }
 
         public void PrintShopList(Player player)
@@ -47,7 +53,7 @@ namespace oopd_011
             else
             {
                 player.coins = player.coins - selectedItem.cost;
-                //player.inventory.AddToInventory(item); 
+                player.inventory.AddToInventory(selectedItem); 
             }
         }
 

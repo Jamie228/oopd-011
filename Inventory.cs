@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace oopd_011
 {
@@ -18,8 +19,19 @@ namespace oopd_011
             foreach (Item item in inventory)
             {
                 Console.WriteLine(x + ". " + item.itemName);
+                Console.WriteLine();
                 x++;
             }
+            SelectItem();
+        }
+
+        public void SelectItem()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Enter your selection:    ");
+            int userSelection = Convert.ToInt32(Console.ReadLine());
+            Item selectedInvItem = inventory.ElementAt(userSelection);
+            //selectedInvItem.UseItem();
         }
     }
 }

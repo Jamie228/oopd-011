@@ -20,8 +20,7 @@ namespace oopd_011
         int userPetChoice;
         string userPetName;
         Shop shop = new Shop();
-        Inventory inventory = new Inventory();
-        Player player = new Player();
+        Player player = new Player(100);
         public Room room = new Room(18.0);
         Pet pet;
         public App()
@@ -69,6 +68,7 @@ namespace oopd_011
                         appState = AppState.Run;
                         break;
                     case AppState.Inventory:
+                        player.inventory.DisplayInventory();
                         break;
                     case AppState.Exiting:
                         break;

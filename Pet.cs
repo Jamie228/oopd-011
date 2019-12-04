@@ -78,10 +78,12 @@ namespace oopd_011
             if (room.temp > idealTemp + 2.0)
             {
                 tempStat = TempStat.Hot;
+                health --;
             }
             else if (room.temp < idealTemp - 2.0)
             {
                 tempStat = TempStat.Cold;
+                health --;
             }
             else
             {

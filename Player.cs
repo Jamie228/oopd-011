@@ -5,8 +5,13 @@ namespace oopd_011
 {
     class Player
     {
-        //public Inventory inventory = new Inventory();
-        public int coins = 100;
+        public int coins;
+        public Inventory inventory = new Inventory();
+
+        public Player(int coins)
+        {
+            this.coins = coins;
+        }
 
         public void Update()
         {

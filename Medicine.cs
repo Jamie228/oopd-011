@@ -6,17 +6,16 @@ using System.Threading;
 
 namespace oopd_011
 {
-    abstract class Item
+    class Medicine : Item
     {
-        public string itemName { get; set; }
-        public int cost { get; set; }
-        public int uses { get; set; }
+        int healthInc;
 
-        public Item(string itemName, int cost, int uses)
+        public Medicine(string itemName, int cost, int uses, int healthInc) : base(itemName, cost, uses)
         {
             this.itemName = itemName;
             this.cost = cost;
             this.uses = uses;
+            this.healthInc = healthInc;
         }
     }
 }
