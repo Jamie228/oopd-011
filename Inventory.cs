@@ -31,7 +31,7 @@ namespace oopd_011
             Console.WriteLine("Enter your selection:    ");
             int userSelection = Convert.ToInt32(Console.ReadLine());
             Item selectedInvItem = inventory.ElementAt(userSelection);
-            //selectedInvItem.UseItem(pet);
+            selectedInvItem.UseItem(selectedInvItem);
         }
     }
 }

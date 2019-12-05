@@ -18,5 +18,21 @@ namespace oopd_011
             this.cost = cost;
             this.uses = uses;
         }
+
+        public void UseItem(Item item)
+        {
+            if (item is Toy)
+            {
+                
+            }
+            else if (item is Food)
+            {
+
+            }
+            else if (item is Medicine)
+            {
+
+            }
+        }
     }
 }
