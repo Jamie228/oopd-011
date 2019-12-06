@@ -15,7 +15,14 @@ namespace oopd_011
 
         public void DisplayFood(Pet pet)
         {
-            foreach(Food item in inventory)
+            List<Food> food = new List<Food>();
+
+            foreach(Food invFood in inventory)
+            {
+                food.Add(invFood);
+            }
+
+            foreach(Food item in food)
             {
                 int x = 0;
                 Console.WriteLine($"{x}. {item.itemName}");
@@ -40,7 +47,15 @@ namespace oopd_011
 
         public void DisplayToys(Pet pet)
         {
-            foreach(Toy item in inventory)
+            List<Toy> toy = new List<Toy>();
+
+            foreach(Toy invToy in inventory)
+            {
+                toy.Add(invToy);
+            }
+
+
+            foreach(Toy item in toy)
             {
                 int x = 0;
                 Console.WriteLine($"{x}. {item.itemName}");
@@ -66,7 +81,15 @@ namespace oopd_011
 
         public void DisplayMedicine(Pet pet)
         {
-            foreach(Medicine item in inventory)
+            List<Medicine> med = new List<Medicine>();
+
+            foreach(Medicine invMed in inventory)
+            {
+                med.Add(invMed);
+            }
+
+
+            foreach(Medicine item in med)
             {
                 int x = 0;
                 Console.WriteLine($"{x}. {item.itemName}");

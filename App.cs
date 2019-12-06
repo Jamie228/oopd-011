@@ -32,8 +32,8 @@ namespace oopd_011
 
         public void Initialise()
         {
-            Console.CursorVisible = false;
-            Console.Clear();
+            //Console.CursorVisible = false;
+            //Console.Clear();
             pet = PetSelect();
         }
 
@@ -71,12 +71,18 @@ namespace oopd_011
                         break;
                     case AppState.Food:
                         player.inventory.DisplayFood(pet);
+                        pet.Update();
+                        appState = AppState.Run;
                         break;
                     case AppState.Medicine:
                         player.inventory.DisplayMedicine(pet);
+                        pet.Update();
+                        appState = AppState.Run;
                         break;
                     case AppState.Toys:
                         player.inventory.DisplayToys(pet);
+                        pet.Update();
+                        appState = AppState.Run;
                         break;
                     case AppState.Exiting:
                         break;
