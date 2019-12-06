@@ -13,7 +13,7 @@ namespace oopd_011
             Toy chewToy = new Toy("Chew Toy", 20, 5, 10);
             Food cheapFood = new Food("Basic Pet Food", 15, 1, 15);
             Food expFood = new Food("Luxury Pet Food", 75, 1, 45);
-            Medicine medicine = new Medicine("Pet Medicine", 25, 1, 25);
+            Medicine medicine = new Medicine("Pet Medicine", 25, 1, 25, 25);
 
             shop.Add(ball);
             shop.Add(chewToy);

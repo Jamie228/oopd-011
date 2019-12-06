@@ -44,32 +44,20 @@ namespace oopd_011
 
         public void Update()
         {
-            if (health - 1 >= 0)
+
+            if (hunger > 50)
             {
                 health --;
-            }
-
-            else
-            {
-                
             }
             
             if (hunger + 1 <= 100)
             {
                 hunger ++;
             }
-            else
-            {
-
-            }
             
             if (mood - 1 >= 0)
             {
                 mood--;
-            }
-            else
-            {
-
             }
         }
 
@@ -102,14 +90,24 @@ namespace oopd_011
             Console.WriteLine("5.   Quit");
         }
 
-        public void Play()
+        public void EatFood(Food food)
         {
-
+            hunger -= food.hungerDec;
+            health += 5;
+            food.uses --;
         }
 
-        public void Illness()
+        public void TakeMedicine(Medicine med)
         {
+            health += med.healthInc;
+            hunger += med.hungerInc;
+            med.uses --;
+        }
 
+        public void PlayWithToy(Toy toy)
+        {
+            mood += toy.moodInc;
+            toy.uses --;   
         }
     }
 }

@@ -8,16 +8,21 @@ namespace oopd_011
 {
     class Toy : Item
     {
-        int moodInc;
+        public int moodInc;
 
         public Toy(string itemName, int cost, int uses, int moodInc) : base(itemName, cost, uses)
         {
             this.itemName = itemName;
             this.cost = cost;
             this.uses = uses;
+
             this.moodInc = moodInc;
         }
 
+        public void UseItem(Pet pet)
+        {
+
+        }
         
     }
 }

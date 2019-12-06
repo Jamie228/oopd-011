@@ -9,7 +9,6 @@ C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.Assemb
 C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.dll
 C:\Users\jamie\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.pdb
 C:\Users\P110103851\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.csprojAssemblyReference.cache
-C:\Users\P110103851\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.csproj.CoreCompileInputs.cache
 C:\Users\P110103851\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.AssemblyInfoInputs.cache
 C:\Users\P110103851\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.AssemblyInfo.cs
 C:\Users\P110103851\Documents\GitHub\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.dll

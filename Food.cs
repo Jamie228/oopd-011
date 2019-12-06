@@ -8,14 +8,14 @@ namespace oopd_011
 {
     class Food : Item
     {
-        int hungerInc;
+        public int hungerDec;
 
-        public Food(string itemName, int cost, int uses, int hungerInc) : base(itemName, cost, uses)
+        public Food(string itemName, int cost, int uses, int hungerDec) : base(itemName, cost, uses)
         {
             this.itemName = itemName;
             this.cost = cost;
             this.uses = uses;
-            this.hungerInc = hungerInc;
+            this.hungerDec = hungerDec;
         }
 
 

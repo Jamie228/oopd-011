@@ -10,7 +10,9 @@ namespace oopd_011
         {
             Run,
             Shop,
-            Inventory,
+            Food,
+            Medicine,
+            Toys,
             Pause,
             Exiting
         }
@@ -67,8 +69,14 @@ namespace oopd_011
                         shop.PrintShopList(player);
                         appState = AppState.Run;
                         break;
-                    case AppState.Inventory:
-                        player.inventory.DisplayInventory(pet);
+                    case AppState.Food:
+                        player.inventory.DisplayFood(pet);
+                        break;
+                    case AppState.Medicine:
+                        player.inventory.DisplayMedicine(pet);
+                        break;
+                    case AppState.Toys:
+                        player.inventory.DisplayToys(pet);
                         break;
                     case AppState.Exiting:
                         break;
@@ -143,9 +151,19 @@ namespace oopd_011
                     appState = AppState.Exiting;
                 }
 
-                if (keyPressed == ConsoleKey.I)
+                if (keyPressed == ConsoleKey.F)
                 {
-                    appState = AppState.Inventory;
+                    appState = AppState.Food;
+                }
+
+                if (keyPressed == ConsoleKey.T)
+                {
+                    appState = AppState.Toys;
+                }
+
+                if (keyPressed == ConsoleKey.M)
+                {
+                    appState = AppState.Medicine;
                 }
 
                 if (keyPressed == ConsoleKey.S)
@@ -184,7 +202,9 @@ namespace oopd_011
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("S:   Shop");
-            Console.WriteLine("I:   Inventory");
+            Console.WriteLine("F:   Feed Pet");
+            Console.WriteLine("T:   Play With Pet");
+            Console.WriteLine("M:   Give Medicine");
             Console.WriteLine("P:   Pause");
             Console.WriteLine("UP:  Heat Room");
             Console.WriteLine("DWN: Cool Room");
