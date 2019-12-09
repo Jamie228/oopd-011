@@ -32,8 +32,8 @@ namespace oopd_011
 
         public void Initialise()
         {
-            //Console.CursorVisible = false;
-            //Console.Clear();
+            Console.CursorVisible = false;
+            Console.Clear();
             pet = PetSelect();
         }
 
