@@ -15,100 +15,145 @@ namespace oopd_011
 
         public void DisplayFood(Pet pet)
         {
-            List<Food> food = new List<Food>();
+            List<Food> invFood = new List<Food>();
 
-            foreach(Food invFood in inventory)
+            foreach (Item item in inventory)
             {
-                food.Add(invFood);
+                if (item.GetType() == typeof(Food))
+                {
+                    Food invFoodItem = (Food)item;
+                    invFood.Add(invFoodItem);
+                }
             }
 
-            foreach(Food item in food)
+            if (invFood.Count == 0)
             {
-                int x = 0;
-                Console.WriteLine($"{x}. {item.itemName}");
-                Console.WriteLine();
-                x ++;
-            }
-            Console.WriteLine("Enter your selection:");
-
-            int userSelectedFood = Convert.ToInt32(Console.ReadLine());
-            Food selectedFood = (Food)inventory.ElementAt(userSelectedFood);
-
-            if (selectedFood.uses -1 < 0)
-            {
-                Console.WriteLine($"Your {selectedFood.itemName} is depleted");
-                inventory.Remove(selectedFood);
+                Console.WriteLine("No food in the inventory");
             }
             else
             {
-                pet.EatFood(selectedFood);
+                foreach (Food food in invFood)
+                {
+                    int x = 0;
+                    Console.WriteLine();
+                    Console.WriteLine($"{x}. {food.itemName}");
+                    x++;
+                }
+
+                int userStringSelection;
+
+                Console.WriteLine("Make your selection: ");
+
+                userStringSelection = Convert.ToInt32(Console.ReadLine());
+
+                Food userSelectedItem = invFood.ElementAt(userStringSelection);
+
+                if (userSelectedItem.uses - 1 < 0)
+                {
+                    Console.WriteLine($"{userSelectedItem.itemName} depleted");
+                    invFood.Remove(userSelectedItem);
+                    inventory.Remove(userSelectedItem);
+                }
+                else
+                {
+                    pet.EatFood(userSelectedItem);
+                }
             }
         }
 
-        public void DisplayToys(Pet pet)
+        public void DisplayToy(Pet pet)
         {
-            List<Toy> toy = new List<Toy>();
+            List<Toy> invToy = new List<Toy>();
 
-            foreach(Toy invToy in inventory)
+            foreach (Item item in inventory)
             {
-                toy.Add(invToy);
+                if (item.GetType() == typeof(Toy))
+                {
+                    Toy invToyItem = (Toy)item;
+                    invToy.Add(invToyItem);
+                }
             }
 
-
-            foreach(Toy item in toy)
+            if (invToy.Count == 0)
             {
-                int x = 0;
-                Console.WriteLine($"{x}. {item.itemName}");
-                Console.WriteLine();
-                x ++;
-            }
-            Console.WriteLine("Enter your selection:");
-
-            int userSelectedFood = Convert.ToInt32(Console.ReadLine());
-            Toy selectedToy = (Toy)inventory.ElementAt(userSelectedFood);
-
-            if (selectedToy.uses -1 < 0)
-            {
-                Console.WriteLine($"Your {selectedToy.itemName} is depleted");
-                inventory.Remove(selectedToy);
+                Console.WriteLine("No toys in the inventory");
             }
             else
             {
-                pet.PlayWithToy(selectedToy);
+                foreach (Toy toy in invToy)
+                {
+                    int x = 0;
+                    Console.WriteLine();
+                    Console.WriteLine($"{x}. {toy.itemName}");
+                    x++;
+                }
+
+                int userStringSelection;
+
+                Console.WriteLine("Make your selection: ");
+
+                userStringSelection = Convert.ToInt32(Console.ReadLine());
+
+                Toy userSelectedItem = invToy.ElementAt(userStringSelection);
+
+                if (userSelectedItem.uses - 1 < 0)
+                {
+                    Console.WriteLine($"{userSelectedItem.itemName} depleted");
+                    invToy.Remove(userSelectedItem);
+                    inventory.Remove(userSelectedItem);
+                }
+                else
+                {
+                    pet.PlayWithToy(userSelectedItem);
+                }
             }
         }
-
 
         public void DisplayMedicine(Pet pet)
         {
-            List<Medicine> med = new List<Medicine>();
+            List<Medicine> invMedicine = new List<Medicine>();
 
-            foreach(Medicine invMed in inventory)
+            foreach (Item item in inventory)
             {
-                med.Add(invMed);
+                if (item.GetType() == typeof(Medicine))
+                {
+                    Medicine invMedicineItem = (Medicine)item;
+                    invMedicine.Add(invMedicineItem);
+                }
             }
 
-
-            foreach(Medicine item in med)
+            if (invMedicine.Count == 0)
             {
-                int x = 0;
-                Console.WriteLine($"{x}. {item.itemName}");
-                Console.WriteLine();
-                x ++;
-            }
-            Console.WriteLine("Enter your selection:");
-
-            int userSelectedMed = Convert.ToInt32(Console.ReadLine());
-            Medicine selectedMed = (Medicine)inventory.ElementAt(userSelectedMed);
-
-            if (selectedMed.uses -1 < 0)
-            {
-                Console.WriteLine($"Your {selectedMed.itemName} is depleted");
-                inventory.Remove(selectedMed);
+                Console.WriteLine("No medicine in the inventory");
             }
             else
             {
-                pet.TakeMedicine(selectedMed);
+                foreach (Medicine medicine in invMedicine)
+                {
+                    int x = 0;
+                    Console.WriteLine();
+                    Console.WriteLine($"{x}. {medicine.itemName}");
+                    x++;
+                }
+
+                int userStringSelection;
+
+                Console.WriteLine("Make your selection: ");
+
+                userStringSelection = Convert.ToInt32(Console.ReadLine());
+
+                Medicine userSelectedItem = invMedicine.ElementAt(userStringSelection);
+
+                if (userSelectedItem.uses - 1 < 0)
+                {
+                    Console.WriteLine($"{userSelectedItem.itemName} depleted");
+                    invMedicine.Remove(userSelectedItem);
+                    inventory.Remove(userSelectedItem);
+                }
+                else
+                {
+                    pet.TakeMedicine(userSelectedItem);
+                }
             }
         }
     }

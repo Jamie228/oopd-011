@@ -92,21 +92,50 @@ namespace oopd_011
 
         public void EatFood(Food food)
         {
-            hunger -= food.hungerDec;
-            health += 5;
+            if (hunger - food.hungerDec < 0)
+            {
+                hunger = 0;
+            }
+            else
+            {
+                hunger -= food.hungerDec;
+            }
             food.uses --;
         }
 
         public void TakeMedicine(Medicine med)
         {
-            health += med.healthInc;
-            hunger += med.hungerInc;
+            if (health + med.healthInc > 100)
+            {
+                health = 100;
+            }
+            else
+            {
+                health+= med.healthInc;
+            }
+
+            if (hunger + med.hungerInc > 100)
+            {
+                hunger = 100;
+            }
+            else
+            {
+                hunger += med.hungerInc;
+            }
+
             med.uses --;
         }
 
         public void PlayWithToy(Toy toy)
         {
-            mood += toy.moodInc;
+            if(mood + toy.moodInc > 100)
+            {
+                mood = 100;
+            }
+            else
+            {
+                mood += toy.moodInc;
+            }
             toy.uses --;   
         }
     }

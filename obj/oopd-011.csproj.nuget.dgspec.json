@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {}
+    "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {}
   },
   "projects": {
-    "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {
+    "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
+        "projectUniqueName": "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
         "projectName": "oopd-011",
-        "projectPath": "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
-        "packagesPath": "C:\\Users\\P110103851\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\obj\\",
+        "projectPath": "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
+        "packagesPath": "C:\\Users\\jamie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jamie\\Documents\\GitHub\\oopd-011\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\P110103851\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -58,7 +60,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

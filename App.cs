@@ -80,7 +80,7 @@ namespace oopd_011
                         appState = AppState.Run;
                         break;
                     case AppState.Toys:
-                        player.inventory.DisplayToys(pet);
+                        player.inventory.DisplayToy(pet);
                         pet.Update();
                         appState = AppState.Run;
                         break;
