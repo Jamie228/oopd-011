@@ -17,12 +17,6 @@ namespace oopd_011
             this.uses = uses;
 
             this.moodInc = moodInc;
-        }
-
-        public void UseItem(Pet pet)
-        {
-
-        }
-        
+        }    
     }
 }

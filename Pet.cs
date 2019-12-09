@@ -79,17 +79,6 @@ namespace oopd_011
             }
         }
 
-        public void PetMenu()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("1.   Shop");
-            Console.WriteLine("2.   Use Item");
-            Console.WriteLine("3.   Heat Room");
-            Console.WriteLine("4.   Cool Room");
-            Console.WriteLine("5.   Quit");
-        }
-
         public void EatFood(Food food)
         {
             if (hunger - food.hungerDec < 0)
