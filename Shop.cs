@@ -48,7 +48,6 @@ namespace oopd_011
             foreach (Item item in shop)
             {
                 Console.WriteLine(x + ". " + item.itemName);
-                Console.WriteLine(item.GetType());
                 Console.WriteLine($"Cost: {item.cost} coins");
                 Console.WriteLine();
                 x ++;

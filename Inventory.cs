@@ -17,6 +17,9 @@ namespace oopd_011
         {
             List<Food> invFood = new List<Food>();
 
+            Console.WriteLine();
+            Console.WriteLine("FOOD\n");
+
             foreach (Item item in inventory)
             {
                 if (item.GetType() == typeof(Food))
@@ -65,6 +68,9 @@ namespace oopd_011
         {
             List<Toy> invToy = new List<Toy>();
 
+            Console.WriteLine();
+            Console.WriteLine("TOYS\n");
+
             foreach (Item item in inventory)
             {
                 if (item.GetType() == typeof(Toy))
@@ -112,6 +118,9 @@ namespace oopd_011
         public void DisplayMedicine(Pet pet)
         {
             List<Medicine> invMedicine = new List<Medicine>();
+
+            Console.WriteLine();
+            Console.WriteLine("MEDICINE\n");
 
             foreach (Item item in inventory)
             {
