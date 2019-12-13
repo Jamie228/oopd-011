@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {}
+    "E:\\OOPD Assignment - 1804492\\011\\oopd-011\\oopd-011.csproj": {}
   },
   "projects": {
-    "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj": {
+    "E:\\OOPD Assignment - 1804492\\011\\oopd-011\\oopd-011.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
+        "projectUniqueName": "E:\\OOPD Assignment - 1804492\\011\\oopd-011\\oopd-011.csproj",
         "projectName": "oopd-011",
-        "projectPath": "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\oopd-011.csproj",
+        "projectPath": "E:\\OOPD Assignment - 1804492\\011\\oopd-011\\oopd-011.csproj",
         "packagesPath": "C:\\Users\\P110103851\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\P110103851\\Documents\\GitHub\\oopd-011\\obj\\",
+        "outputPath": "E:\\OOPD Assignment - 1804492\\011\\oopd-011\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

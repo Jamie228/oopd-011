@@ -63,6 +63,7 @@ namespace oopd_011
                     case AppState.Shop:
                         Console.Clear();
                         pet.Update();
+                        player.DisplayCoins();
                         pet.DisplayPet();
                         DrawMainMenu();
                         Console.WriteLine();

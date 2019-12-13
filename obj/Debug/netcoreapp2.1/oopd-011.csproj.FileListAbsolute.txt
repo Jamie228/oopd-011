@@ -18,3 +18,13 @@ C:\Users\P110103851\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.r
 C:\Users\P110103851\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.runtimeconfig.dev.json
 C:\Users\P110103851\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.dll
 C:\Users\P110103851\Documents\GitHub\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.pdb
+E:\OOPD Assignment - 1804492\011\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.deps.json
+E:\OOPD Assignment - 1804492\011\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.runtimeconfig.json
+E:\OOPD Assignment - 1804492\011\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.runtimeconfig.dev.json
+E:\OOPD Assignment - 1804492\011\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.dll
+E:\OOPD Assignment - 1804492\011\oopd-011\bin\Debug\netcoreapp2.1\oopd-011.pdb
+E:\OOPD Assignment - 1804492\011\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.csprojAssemblyReference.cache
+E:\OOPD Assignment - 1804492\011\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.AssemblyInfoInputs.cache
+E:\OOPD Assignment - 1804492\011\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.AssemblyInfo.cs
+E:\OOPD Assignment - 1804492\011\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.dll
+E:\OOPD Assignment - 1804492\011\oopd-011\obj\Debug\netcoreapp2.1\oopd-011.pdb
