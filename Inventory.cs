@@ -40,6 +40,7 @@ namespace oopd_011
                     int x = 0;
                     Console.WriteLine();
                     Console.WriteLine($"{x}. {food.itemName}");
+                    Console.WriteLine($"Uses: {food.uses}");
                     x++;
                 }
 
@@ -91,6 +92,7 @@ namespace oopd_011
                     int x = 0;
                     Console.WriteLine();
                     Console.WriteLine($"{x}. {toy.itemName}");
+                    Console.WriteLine($"Uses: {toy.uses}");
                     x++;
                 }
 
@@ -142,6 +144,7 @@ namespace oopd_011
                     int x = 0;
                     Console.WriteLine();
                     Console.WriteLine($"{x}. {medicine.itemName}");
+                    Console.WriteLine($"Uses: {medicine.uses}");
                     x++;
                 }
 
