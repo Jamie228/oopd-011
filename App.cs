@@ -22,7 +22,7 @@ namespace oopd_011
         int userPetChoice;
         string userPetName;
         Shop shop = new Shop();
-        Player player = new Player(100);
+        Player player = new Player(50);
         public Room room = new Room(18.0);
         Pet pet;
         public App()
