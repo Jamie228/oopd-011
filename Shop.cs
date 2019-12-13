@@ -54,6 +54,7 @@ namespace oopd_011
             {
                 Console.WriteLine(x + ". " + item.itemName);
                 Console.WriteLine($"Cost: {item.cost} coins");
+                Console.WriteLine($"Uses: {item.uses}");
                 Console.WriteLine();
                 x ++;
             }
